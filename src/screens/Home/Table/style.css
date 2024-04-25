@@ -1,0 +1,60 @@
+.container {
+  margin: 100px auto;
+  padding: 20px;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  /* text-align: center; */
+}
+
+.dataT {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dataT h2 {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.buttons button {
+  margin-right: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.buttons button:hover {
+  background-color: #ddd;
+}

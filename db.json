@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "0": {
+        "region": "Asror",
+        "children": [
+          {
+            "min": "ddd",
+            "max": "dddddddd",
+            "metric": "ddddd",
+            "amount": "dddddddddd"
+          }
+        ]
+      },
+      "id": "9793"
+    },
+    {
+      "0": {
+        "region": "Bekmurod",
+        "children": [
+          {
+            "min": "ddd",
+            "max": "ddd",
+            "metric": "ddd",
+            "amount": "ddd"
+          },
+          {
+            "min": "www",
+            "max": "w",
+            "metric": "www",
+            "amount": "wwww"
+          }
+        ]
+      },
+      "id": "bcf3"
+    },
+    {
+      "0": {
+        "region": "Bekmurod",
+        "children": [
+          {
+            "min": "ss",
+            "max": "ss",
+            "metric": "s",
+            "amount": "sss"
+          }
+        ]
+      },
+      "id": "85e3"
+    }
+  ]
+}

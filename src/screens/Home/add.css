@@ -1,0 +1,10 @@
+.inputs {
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
