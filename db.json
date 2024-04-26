@@ -19,34 +19,14 @@
         "region": "Bekmurod",
         "children": [
           {
-            "min": "ddd",
-            "max": "ddd",
-            "metric": "ddd",
-            "amount": "ddd"
-          },
-          {
-            "min": "www",
-            "max": "w",
-            "metric": "www",
-            "amount": "wwww"
+            "min": "w",
+            "max": "wwwwwww",
+            "metric": "wwwwwwwwwwww",
+            "amount": "www"
           }
         ]
       },
-      "id": "bcf3"
-    },
-    {
-      "0": {
-        "region": "Bekmurod",
-        "children": [
-          {
-            "min": "ss",
-            "max": "ss",
-            "metric": "s",
-            "amount": "sss"
-          }
-        ]
-      },
-      "id": "85e3"
+      "id": "e537"
     }
   ]
 }

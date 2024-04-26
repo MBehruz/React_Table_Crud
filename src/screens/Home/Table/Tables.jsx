@@ -33,9 +33,10 @@ export default () => {
         accessor: '',
         Cell: (data) => (
           <>
-            {console.log(data.row.id)}
             <button onClick={() => handleEdit(data.row.original)}>Edit</button>
-            <button onClick={() => handleDelete(data?.row?.id)}>Delete</button>
+            <button onClick={() => handleDelete(data?.row.original.id)}>
+              Delete
+            </button>
           </>
         ),
       },
@@ -44,45 +45,27 @@ export default () => {
   );
 
   const [data, setData] = useState([]);
-  const [fData, setFData] = useState([]);
   const [refresh, setRefresh] = useState(false);
 
   const fetchData = () => {
     axios
       .get('http://localhost:8080/users')
       .then((res) => {
-        // const fData = res.data.map((item) => ({
-        //   region: item[0].region,
-        //   min: item[0].children[0].min,
-        //   max: item[0].children[0].max,
-        //   metric: item[0].children[0].metric,
-        //   amount: item[0].children[0].amount,
-        // }));
-        setData(res.data);
-        // setFData(fData);
-      })
-      .catch((err) => console.log(err));
-  };
-
-  const DData = () => {
-    axios
-      .get('http://localhost:8080/users')
-      .then((res) => {
-        const fata = res.data.map((item) => ({
+        const fData = res.data.map((item) => ({
           region: item[0].region,
           min: item[0].children[0].min,
           max: item[0].children[0].max,
           metric: item[0].children[0].metric,
           amount: item[0].children[0].amount,
+          id: item.id,
         }));
-        setFData(fata);
+        setData(fData);
       })
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     fetchData();
-    DData();
   }, [refresh]);
 
   const handleEdit = (userData) => {
@@ -93,7 +76,7 @@ export default () => {
     axios
       .delete(`http://localhost:8080/users/${id}`)
       .then(() => {
-        setRefresh(!refresh);
+        fetchData();
       })
       .catch((err) => console.log(err));
   };

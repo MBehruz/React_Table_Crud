@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 import axios from 'axios';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import SelectB from '../../component/SelectB';
